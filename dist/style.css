@@ -7848,6 +7848,10 @@ details.collapse summary::-webkit-details-marker {
   margin: 0.25rem;
 }
 
+.m-48 {
+  margin: 12rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -7858,9 +7862,28 @@ details.collapse summary::-webkit-details-marker {
   margin-bottom: 3rem;
 }
 
+.my-36 {
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.my-48 {
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
 }
 
 .mb-14 {
@@ -8006,6 +8029,10 @@ details.collapse summary::-webkit-details-marker {
   height: 3.5rem;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .h-24 {
   height: 6rem;
 }
@@ -8022,6 +8049,18 @@ details.collapse summary::-webkit-details-marker {
   min-height: 690px;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
 .w-3\/5 {
   width: 60%;
 }
@@ -8032,6 +8071,10 @@ details.collapse summary::-webkit-details-marker {
 
 .w-52 {
   width: 13rem;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .w-full {
@@ -8571,6 +8614,14 @@ details.collapse summary::-webkit-details-marker {
   justify-items: stretch;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-16 {
   gap: 4rem;
 }
@@ -9037,8 +9088,22 @@ details.collapse summary::-webkit-details-marker {
   border-style: none;
 }
 
+.border-dark-2 {
+  --tw-border-opacity: 1;
+  border-color: rgb(18 18 18 / var(--tw-border-opacity));
+}
+
 .border-dark-3 {
   border-color: #121212cc;
+}
+
+.bg-\[\#1212121a\] {
+  background-color: #1212121a;
+}
+
+.bg-\[\#1877F2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 119 242 / var(--tw-bg-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
@@ -9070,8 +9135,30 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[radial-gradient\(ellipse_at_center\2c _var\(--tw-gradient-stops\)\)\] {
+  background-image: radial-gradient(ellipse at center, var(--tw-gradient-stops));
+}
+
 .bg-\[url\(\'\/images\/team\.png\'\)\] {
   background-image: url('/images/team.png');
+}
+
+.from-\[\#FF0000\] {
+  --tw-gradient-from: #FF0000 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 0 0 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-10\% {
+  --tw-gradient-from-position: 10%;
+}
+
+.to-transparent {
+  --tw-gradient-to: transparent var(--tw-gradient-to-position);
+}
+
+.to-50\% {
+  --tw-gradient-to-position: 50%;
 }
 
 .decoration-slice {
@@ -9186,6 +9273,10 @@ details.collapse summary::-webkit-details-marker {
 
 .p-0 {
   padding: 0px;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .p-12 {
@@ -9337,6 +9428,11 @@ details.collapse summary::-webkit-details-marker {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-5xl {
@@ -9958,6 +10054,10 @@ details.collapse summary::-webkit-details-marker {
 @media (min-width: 1024px) {
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-4 {
