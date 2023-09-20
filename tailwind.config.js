@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         'fruit-default':'#F85559',
         'dark-2': '#121212',
+        'dark-3':'#121212cc',
       },
       fontFamily:{
         'lato': ['Lato', 'sans-serif'],
@@ -14,6 +15,6 @@ module.exports = {
   },
   plugins: [require('daisyui')],
   daisyui: {
-    themes: ['light', 'dark', 'cupcake'],
+    themes: ['light'],
   },
 }

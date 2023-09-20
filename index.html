@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- font awesome link -->
+  <script src="https://kit.fontawesome.com/4a631f0fb4.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="font-lato">
@@ -54,7 +56,7 @@
     </div>
     <!-- navbar end -->
     <!-- banner section start -->
-    <section>
+    <section class="relative">
       <div class="carousel w-full mt-14">
         <div id="slide1" class="carousel-item relative w-full">
           <img src="images/banner1.png" class="w-full" />
@@ -113,13 +115,303 @@
           </div>
         </div>
       </div>
-      <div></div>
+
+      <div class="hidden lg:flex gap-16 xl:gap-20 2xl:gap-24 px-6 xl:px-16 py-12 absolute -bottom-28 left-32 right-32 rounded-lg shadow-2xl bg-white">
+        <div class="flex flex-col gap-4 items-center flex-1">
+          <img src="images/fruit1.png" alt="" class="h-24">
+          <p class="text-sm xl:text-xl font-medium text-dark-3">Red Grape</p>
+        </div>
+        <div class="flex flex-col gap-4 items-center flex-1">
+          <img src="images/fruit2.png" alt="" class="h-24">
+          <p class="text-sm xl:text-xl font-medium text-dark-3">Orange</p>
+        </div>
+        <div class="flex flex-col gap-4 items-center flex-1">
+          <img src="images/fruit3.png" alt="" class="h-24">
+          <p class="text-sm xl:text-xl font-medium text-dark-3">Mango</p>
+        </div>
+        <div class="flex flex-col gap-4 items-center flex-1">
+          <img src="images/fruit4.png" alt="" class="h-24">
+          <p class="text-sm xl:text-xl font-medium text-dark-3">Strawberry</p>
+        </div>
+        <div class="flex flex-col gap-4 items-center flex-1">
+          <img src="images/fruit5.png" alt="" class="h-24">
+          <p class="text-sm xl:text-xl font-medium text-dark-3">Pomegranate</p>
+        </div>
+      </div>
     </section>
 
     <!-- banner section end -->
 
   </header>
-  <main class="container mx-auto"></main>
+  <main class="container mx-auto">
+    <!-- todays deal section start -->
+    <section class="mt-48">
+      <!-- deal count start -->
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="text-center md:text-left">
+          <h2 class="text-5xl font-extrabold pb-6">Deal of the day</h2>
+          <p class="text-base font-medium text-dark-3 w-full md:w-3/4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div class="grid grid-flow-col text-center auto-cols-max justify-self-center md:justify-self-end">
+          <div class="flex flex-col">
+            <span class="countdown text-5xl font-extrabold">
+              <span style="--value:15;"></span>
+            </span>
+            <span class="text-base font-medium pt-2">Days</span>
+          </div>
+          <div class="pt-3">
+            <img src="images/threedot.png" alt="" class="h-8">
+          </div> 
+          <div class="flex flex-col">
+            <span class="countdown text-5xl font-extrabold">
+              <span style="--value:10;"></span>
+            </span>
+            <span class="text-base font-medium pt-2">Hours</span>
+          </div> 
+          <div class="pt-3">
+            <img src="images/threedot.png" alt="" class="h-8">
+          </div> 
+          <div class="flex flex-col">
+            <span class="countdown text-5xl font-extrabold">
+              <span style="--value:24;"></span>
+            </span>
+            <span class="text-base font-medium pt-2">Minutes</span>
+          </div>
+          <div class="pt-3">
+            <img src="images/threedot.png" alt="" class="h-8">
+          </div> 
+          <div class="flex flex-col">
+            <span class="countdown text-5xl font-extrabold">
+              <span style="--value:9;"></span>
+            </span>
+            <span class="text-base font-medium pt-2">Seconds</span>
+          </div>
+        </div>
+      </div>
+      <!-- deal count ends -->
+      <!-- products section start -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-12">
+        <div class="card border-dark-3 border rounded-lg p-12">
+          <figure class="pb-12">
+            <img src="images/fruit6.png" alt="Shoes" class="w-3/5" />
+          </figure>
+          <div class="card-body items-center text-center p-0">
+            <h5 class="text-2xl font-bold text-dark-2">12.90$ - 18.85$</h5>
+            <hr class="bg-dark-3 w-full my-6">
+            <p class="text-base font-medium pb-6 text-dark-3">Apples</p>
+            <div class="rating rating-md rating-half">
+              <input type="radio" name="rating-1" class="rating-hidden" />
+              <input type="radio" name="rating-1" class="bg-fruit-default mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-1" class="bg-fruit-default mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-1" class="bg-fruit-default mask mask-star-2 mask-half-1" checked />
+              <input type="radio" name="rating-1" class="bg-fruit-default mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-1" class="bg-fruit-default mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-1" class="bg-fruit-default mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-1" class="bg-fruit-default mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-1" class="bg-fruit-default mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-1" class="bg-fruit-default mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-1" class="bg-fruit-default mask mask-star-2 mask-half-2" />
+            </div>
+            <a href="" class="pt-8 text-lg font-bold text-fruit-default">Details</a>
+          </div>
+        </div>
+        <div class="card border-dark-3 border rounded-lg p-12">
+          <figure class="pb-12">
+            <img src="images/fruit7.png" alt="Shoes" class="w-3/5" />
+          </figure>
+          <div class="card-body items-center text-center p-0">
+            <h5 class="text-2xl font-bold text-dark-2">12.90$ - 18.85$</h5>
+            <hr class="bg-dark-3 w-full my-6">
+            <p class="text-base font-medium pb-6 text-dark-3">Apples</p>
+            <div class="rating rating-md rating-half">
+              <input type="radio" name="rating-2" class="rating-hidden" />
+              <input type="radio" name="rating-2" class="bg-fruit-default mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-2" class="bg-fruit-default mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-2" class="bg-fruit-default mask mask-star-2 mask-half-1" checked />
+              <input type="radio" name="rating-2" class="bg-fruit-default mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-2" class="bg-fruit-default mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-2" class="bg-fruit-default mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-2" class="bg-fruit-default mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-2" class="bg-fruit-default mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-2" class="bg-fruit-default mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-2" class="bg-fruit-default mask mask-star-2 mask-half-2" />
+            </div>
+            <a href="" class="pt-8 text-lg font-bold text-fruit-default">Details</a>
+          </div>
+        </div>
+        <div class="card border-dark-3 border rounded-lg p-12">
+          <figure class="pb-12">
+            <img src="images/fruit8.png" alt="Shoes" class="w-3/5" />
+          </figure>
+          <div class="card-body items-center text-center p-0">
+            <h5 class="text-2xl font-bold text-dark-2">12.90$ - 18.85$</h5>
+            <hr class="bg-dark-3 w-full my-6">
+            <p class="text-base font-medium pb-6 text-dark-3">Apples</p>
+            <div class="rating rating-md rating-half">
+              <input type="radio" name="rating-3" class="rating-hidden" />
+              <input type="radio" name="rating-3" class="bg-fruit-default mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-3" class="bg-fruit-default mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-3" class="bg-fruit-default mask mask-star-2 mask-half-1" checked />
+              <input type="radio" name="rating-3" class="bg-fruit-default mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-3" class="bg-fruit-default mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-3" class="bg-fruit-default mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-3" class="bg-fruit-default mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-3" class="bg-fruit-default mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-3" class="bg-fruit-default mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-3" class="bg-fruit-default mask mask-star-2 mask-half-2" />
+            </div>
+            <a href="" class="pt-8 text-lg font-bold text-fruit-default">Details</a>
+          </div>
+        </div>
+        <div class="card border-dark-3 border rounded-lg p-12">
+          <figure class="pb-12">
+            <img src="images/fruit8.png" alt="Shoes" class="w-3/5" />
+          </figure>
+          <div class="card-body items-center text-center p-0">
+            <h5 class="text-2xl font-bold text-dark-2">12.90$ - 18.85$</h5>
+            <hr class="bg-dark-3 w-full my-6">
+            <p class="text-base font-medium pb-6 text-dark-3">Apples</p>
+            <div class="rating rating-md rating-half">
+              <input type="radio" name="rating-4" class="rating-hidden" />
+              <input type="radio" name="rating-4" class="bg-fruit-default mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-4" class="bg-fruit-default mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-4" class="bg-fruit-default mask mask-star-2 mask-half-1" checked />
+              <input type="radio" name="rating-4" class="bg-fruit-default mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-4" class="bg-fruit-default mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-4" class="bg-fruit-default mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-4" class="bg-fruit-default mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-4" class="bg-fruit-default mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-4" class="bg-fruit-default mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-4" class="bg-fruit-default mask mask-star-2 mask-half-2" />
+            </div>
+            <a href="" class="pt-8 text-lg font-bold text-fruit-default">Details</a>
+          </div>
+        </div>
+        <div class="col-span-4 justify-self-center">
+          <button class="text-xl font-extrabold py-5 px-8 rounded-lg bg-fruit-default text-white mt-8">Shop All</button>
+        </div>
+      </div>
+      <!-- products section end -->
+    </section>
+    <!-- todays deal section ends -->
+    <!-- team section start -->
+      <section class="hero min-h-[690px] bg-[url('/images/team.png')] overflow-hidden rounded-lg">
+        <div class="hero-overlay bg-dark-3 opacity-70"></div>
+        <div class="hero-content flex-col text-center text-neutral-content">
+          <div class="max-w-xl mx-auto">
+            <h2 class="mb-6 text-5xl font-extrabold">Meet the team section</h2>
+            <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <div class="card">
+              <figure class="px-10 pt-10">
+                <img src="/images/member1.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="text-2xl font-bold">Awlad Hossain</h2>
+                <p class="text-base font-medium">Fruits Expert</p>
+                <ul class="menu menu-horizontal mt-4 gap-4">
+                  <li>
+                    <a class="tooltip p-0" data-tip="facebook">
+                      <img src="images/facebook.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tooltip p-0" data-tip="twitter">
+                      <img src="images/twitter.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tooltip p-0" data-tip="linkedin">
+                      <img src="images/linkedin.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <figure class="px-10 pt-10">
+                <img src="/images/member2.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="text-2xl font-bold">Safia Chowdhury</h2>
+                <p class="text-base font-medium">Fruits Expert</p>
+                <ul class="menu menu-horizontal mt-4 gap-4">
+                  <li>
+                    <a class="tooltip p-0" data-tip="facebook">
+                      <img src="images/facebook.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tooltip p-0" data-tip="twitter">
+                      <img src="images/twitter.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tooltip p-0" data-tip="linkedin">
+                      <img src="images/linkedin.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <figure class="px-10 pt-10">
+                <img src="/images/member3.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="text-2xl font-bold">Rokib Hossain</h2>
+                <p class="text-base font-medium">Fruits Expert</p>
+                <ul class="menu menu-horizontal mt-4 gap-4">
+                  <li>
+                    <a class="tooltip p-0" data-tip="facebook">
+                      <img src="images/facebook.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tooltip p-0" data-tip="twitter">
+                      <img src="images/twitter.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tooltip p-0" data-tip="linkedin">
+                      <img src="images/linkedin.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <figure class="px-10 pt-10">
+                <img src="/images/member4.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="text-2xl font-bold">Jenny</h2>
+                <p class="text-base font-medium">Fruits Expert</p>
+                <ul class="menu menu-horizontal mt-4 gap-4">
+                  <li>
+                    <a class="tooltip p-0" data-tip="facebook">
+                      <img src="images/facebook.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tooltip p-0" data-tip="twitter">
+                      <img src="images/twitter.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tooltip p-0" data-tip="linkedin">
+                      <img src="images/linkedin.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- team section ends -->
+  </main>
   <footer class="container mx-auto"></footer>
 </body>
 
