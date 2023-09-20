@@ -1,15 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>fruit-brust</title>
   <!-- css link -->
   <link rel="stylesheet" href="./dist/style.css">
+  <!-- font links  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+
+<body class="font-lato">
+  <header class="container mx-auto mt-12 mb-14">
+    <!-- navbar start -->
+    <div class="navbar bg-fruit-default rounded-full py-8 px-12">
+      <div class="navbar-start text-lg font-medium text-white">
+        <div class="dropdown block md:hidden">
+          <label tabindex="0" class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+            </svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <ul tabindex="0" class="hidden md:inline-flex gap-8 px-2">
+          <li><a>Home</a></li>
+          <li><a>About Us</a></li>
+          <li><a>Shop</a></li>
+          <li><a>All Fruits</a></li>
+        </ul>
+      </div>
+      <div class="navbar-center text-white">
+        <img src="images/logo.png" alt="">
+        <a class="normal-case text-5xl font-bold py-2">Fruit Burst</a>
+      </div>
+      <div class="navbar-end hidden md:inline-flex">
+        <div class="flex text-md h-14">
+          <input type="text" placeholder="Search…" class="border-0 px-7 rounded-l-full" />
+          <button class="border-0 rounded-r-full bg-white px-7">
+            <img src="images/search.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- navbar end -->
+    <!-- banner section start -->
+    <section>
+      <div class="carousel w-full mt-14">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="images/banner1.png" class="w-full" />
+          <div class="absolute left-0 right-0 top-20 text-center text-white">
+            <h2 class="text-7xl font-extrabold">Exotic tastes at your <br>doorstep</h2>
+            <p class="pt-6 text-xl font-medium">We supply highly quality organic products</p>
+            <button class="text-xl font-extrabold py-5 px-8 rounded-lg bg-fruit-default mt-8">Shop Now</button>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-12 right-12 top-1/2">
+            <a href="#slide4" class="btn btn-circle bg-dark-2 text-white border-0"><img src="images/left-arrow.png"
+                alt=""></a>
+            <a href="#slide2" class="btn btn-circle bg-dark-2 text-white border-0"><img src="images/right-arrow.png"
+                alt=""></a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="images/banner2.png" class="w-full" />
+          <div class="absolute left-0 right-0 top-20 text-center text-white">
+            <h2 class="text-7xl font-extrabold">Exotic tastes at your <br>doorstep</h2>
+            <p class="pt-6 text-xl font-medium">We supply highly quality organic products</p>
+            <button class="text-xl font-extrabold py-5 px-8 rounded-lg bg-fruit-default mt-8">Shop Now</button>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-12 right-12 top-1/2">
+            <a href="#slide1" class="btn btn-circle bg-dark-2 text-white border-0"><img src="images/left-arrow.png"
+                alt=""></a>
+            <a href="#slide3" class="btn btn-circle bg-dark-2 text-white border-0"><img src="images/right-arrow.png"
+                alt=""></a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="images/banner3.png" class="w-full" />
+          <div class="absolute left-0 right-0 top-20 text-center text-white">
+            <h2 class="text-7xl font-extrabold">Exotic tastes at your <br>doorstep</h2>
+            <p class="pt-6 text-xl font-medium">We supply highly quality organic products</p>
+            <button class="text-xl font-extrabold py-5 px-8 rounded-lg bg-fruit-default mt-8">Shop Now</button>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-12 right-12 top-1/2">
+            <a href="#slide2" class="btn btn-circle bg-dark-2 text-white border-0"><img src="images/left-arrow.png"
+                alt=""></a>
+            <a href="#slide4" class="btn btn-circle bg-dark-2 text-white border-0"><img src="images/right-arrow.png"
+                alt=""></a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="images/banner4.png" class="w-full" />
+          <div class="absolute left-0 right-0 top-20 text-center text-white">
+            <h2 class="text-7xl font-extrabold">Exotic tastes at your <br>doorstep</h2>
+            <p class="pt-6 text-xl font-medium">We supply highly quality organic products</p>
+            <button class="text-xl font-extrabold py-5 px-8 rounded-lg bg-fruit-default mt-8">Shop Now</button>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-12 right-12 top-1/2">
+            <a href="#slide3" class="btn btn-circle bg-dark-2 text-white border-0"><img src="images/left-arrow.png"
+                alt=""></a>
+            <a href="#slide1" class="btn btn-circle bg-dark-2 text-white border-0"><img src="images/right-arrow.png"
+                alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </section>
+
+    <!-- banner section end -->
+
+  </header>
+  <main class="container mx-auto"></main>
+  <footer class="container mx-auto"></footer>
 </body>
+
 </html>
